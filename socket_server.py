@@ -6,6 +6,7 @@ sock,addr=server.accept()
 data=""
 while True:
     sock.send("welcome to server!".encode("utf8"))
+    #recv方法是阻塞的
     tmp_data=sock.recv(1024).decode("utf8")
     print(tmp_data)
     input_date=input()
