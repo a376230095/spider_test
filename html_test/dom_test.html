@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bobby基本信息</title>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            //id名来定位到信息，比如id="info"，就会定位到id的节点
+            //console.log($("#info")[0].nodeName)
+            //.text()是打印text的内容
+            //console.log($("#info").text())
+            //.teacher_info是指class标签，如果是div.teacher_info，则是打印div下全部class名为teacher_info
+            //console.log($(".teacher_info").text())
+            //children获取全部子节点，first获取第一个节点
+            //console.log($("#info").children().first().text())
+            //siblings获取兄弟节点（平行节点）
+            //console.log($(".name").siblings().first().text())
+            //在class=name上增加一个class名为bobby
+            //$(".name").addClass("bobby")
+            //attr会找到name的class名字
+            //console.log($(".name").attr("class"))
+            //在age上增加属性date=30
+            //$(".age").attr("data",30)
+            //用remove删除age节点
+            //$(".age").remove()
+
+
+        });
+    </script>
+
+
+
+    <!--<script>-->
+        <!--$(document).ready(function () {-->
+            <!--console.log($("#info")[0].nodeName)-->
+            <!--// console.log($("#info").text())-->
+            <!--// console.log($("#info").html_test())-->
+            <!--// console.log($(".teacher_info").html_test())-->
+            <!--// console.log($("#info").children().first().text())-->
+            <!--// console.log($(".name").siblings().first().text())-->
+            <!--$(".name").addClass("bobby")-->
+            <!--console.log($(".name").attr("class"))-->
+            <!--$(".age").attr("data", "30")-->
+            <!--$(".age").remove()-->
+        <!--})-->
+    <!--</script>-->
+</head>
+<body>
+    <div id="info">
+        <p style="color: blue">讲师信息</p>
+        <div class="teacher_info info">
+            python全栈工程师，7年工作经验，喜欢钻研python技术，对爬虫、
+            web开发以及机器学习有浓厚的兴趣，关注前沿技术以及发展趋势。
+            <p class="age">年龄: 29</p>
+            <p class="name">姓名: bobby</p>
+            <p class="work_years">工作年限: 7年</p>
+            <p class="position">职位: python开发工程师</p>
+        </div>
+        <p style="color: aquamarine">课程信息</p>
+        <table class="courses">
+          <tr>
+            <th>课程名</th>
+            <th>讲师</th>
+            <th>地址</th>
+          </tr>
+          <tr>
+            <td>django打造在线教育</td>
+            <td>bobby</td>
+            <td><a href="https://coding.imooc.com/class/78.html">访问</a></td>
+          </tr>
+          <tr>
+            <td>python高级编程</td>
+            <td>bobby</td>
+            <td><a href="https://coding.imooc.com/class/200.html">访问</a></td>
+          </tr>
+          <tr>
+            <td>scrapy分布式爬虫</td>
+            <td>bobby</td>
+            <td><a href="https://coding.imooc.com/class/92.html">访问</a></td>
+          </tr>
+          <tr>
+            <td>django rest framework打造生鲜电商</td>
+            <td>bobby</td>
+            <td><a href="https://coding.imooc.com/class/131.html">访问</a></td>
+          </tr>
+          <tr>
+            <td>tornado从入门到精通</td>
+            <td>bobby</td>
+            <td><a href="https://coding.imooc.com/class/290.html">访问</a></td>
+          </tr>
+        </table>
+    </div>
+
+</body>
+</html>

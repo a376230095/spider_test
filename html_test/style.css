@@ -1,0 +1,9 @@
+body{
+    background-color:#d0e4fe;
+    }
+div.div1{
+        width: 200px;
+        height: 200px;
+        background: yellow;
+        line-height:100px
+        }

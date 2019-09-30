@@ -26,7 +26,8 @@ offline_msg_template = {
     "action":"history_msg",
     "user":"user",
 }
-#获取在线用户
-get_user_template = {
-    "action":"list_user"
+#退出
+exit_template = {
+    "atcion":"exit",
+    "user":"user"
 }
